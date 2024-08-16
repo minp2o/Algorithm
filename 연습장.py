@@ -1,6 +1,6 @@
-queue=[]
-queue.append(1)
-queue.append(2)
-queue.append(3)
-print(queue.pop(0))
-print(queue)
+arr=[[0]*4 for _ in range(4)]
+print(all(all([i==0 for i in j]) for j in arr))
+
+arr[1][1]=1
+print(all(all([i==0 for i in j]) for j in arr))
+all
